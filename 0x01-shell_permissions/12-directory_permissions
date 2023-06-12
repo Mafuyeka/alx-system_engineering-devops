@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 mkdir -m 751 my_dir
+=======
+chmod -R ugo+x
+>>>>>>> 19e1b175155adcdbc08e0c870f9dba225fba9dba
