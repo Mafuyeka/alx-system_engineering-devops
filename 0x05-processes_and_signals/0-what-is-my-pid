@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#Displays my PID.
+# Displays its own PID.
 
 echo $$
