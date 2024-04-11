@@ -1,2 +1,3 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/^\d{10}$/).join
+reg_a = /^\d{10}$/
+puts "#{reg_a.match("#{ARGV[0]}")}"
