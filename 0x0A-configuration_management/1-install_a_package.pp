@@ -1,9 +1,7 @@
-# create_school_file.pp
+# install_flask.pp
 
-file { '/tmp/school':
-  ensure  => file,                  # Ensure it's a file
-  mode    => '0744',                # Set file permissions to 0744
-  owner   => 'www-data',            # Set file owner to www-data
-  group   => 'www-data',            # Set file group to www-data
-  content => "I love Puppet\n",     # Set the content of the file
+package { 'Flask':
+  ensure   => '2.1.0',      # Ensure Flask version 2.1.0 is installed
+  provider => 'pip3',       # Use pip3 as the package provider
+  require  => Package['python3-pip'],  # Ensure python3-pip is installed first
 }
